@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Play:wght@400;700&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  min-height: 100vh;
+  background: rgb(194, 141, 194);
+  background-image: linear-gradient(to right, #fff 2px, transparent 2px),
+    linear-gradient(to top, #fff 2px, transparent 2px);
+  background-position: center;
+  background-size: 600px 600px;
+}
+div.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 598px;
+  min-height: 598px;
+  transform: translate(1px, -1px);
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: inset -1px -2px 30px rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(2px);
+  padding: 40px 40px;
+  transition: all 1000ms ease-in-out;
+}
+div.wrapper:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+div.wrapper #button {
+  font-family: "Play";
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-shadow: 1px 0 1px rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.3);
+  color: rgba(0, 0, 0, 0.8);
+}
